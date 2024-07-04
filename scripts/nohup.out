@@ -1,0 +1,69 @@
+usage: train_viformer_multigpu.py [-h] [--exp EXP] [--gpu_id GPU_ID]
+                                  [--gpu_ids GPU_IDS] [--epoch EPOCH]
+                                  [--batch_size BATCH_SIZE]
+                                  [--batch_size_IMGNET BATCH_SIZE_IMGNET]
+                                  [--test_batch_size TEST_BATCH_SIZE]
+                                  [--num_worker NUM_WORKER]
+                                  [--log_interval LOG_INTERVAL]
+                                  [--save_interval SAVE_INTERVAL]
+                                  [--lamba LAMBA] [--lr LR]
+                                  [--weight_decay WEIGHT_DECAY]
+                                  [--use_method USE_METHOD]
+                                  [--clip_model_name CLIP_MODEL_NAME]
+                                  [--use_viformer USE_VIFORMER]
+                                  [--num_transformer_layers NUM_TRANSFORMER_LAYERS]
+                                  [--nhead NHEAD] [--use_Lora USE_LORA]
+                                  [--full_param_training FULL_PARAM_TRAINING]
+                                  [--K K] [--center_method CENTER_METHOD]
+                                  [--margin MARGIN]
+                                  [--training_info_path TRAINING_INFO_PATH]
+                                  [--training_data_path TRAINING_DATA_PATH]
+                                  [--training_caption_path TRAINING_CAPTION_PATH]
+                                  [--eval_data_label_path EVAL_DATA_LABEL_PATH]
+                                  [--test_data_label_path TEST_DATA_LABEL_PATH]
+                                  [--b B] [--s S] [--f F] [--fs FS]
+train_viformer_multigpu.py: error: argument --num_worker: expected one argument
+Traceback (most recent call last):
+  File "/data1/yinpeng.dong/Omniview-Tuning/scripts/caption_VLM_instrucBLIP.py", line 5, in <module>
+    from lavis.models import load_model_and_preprocess
+  File "/data1/yinpeng.dong/LAVIS-main/lavis/__init__.py", line 15, in <module>
+    from lavis.datasets.builders import *
+  File "/data1/yinpeng.dong/LAVIS-main/lavis/datasets/builders/__init__.py", line 8, in <module>
+    from lavis.datasets.builders.base_dataset_builder import load_dataset_config
+  File "/data1/yinpeng.dong/LAVIS-main/lavis/datasets/builders/base_dataset_builder.py", line 13, in <module>
+    import lavis.common.utils as utils
+  File "/data1/yinpeng.dong/LAVIS-main/lavis/common/utils.py", line 27, in <module>
+    from lavis.common.dist_utils import download_cached_file
+  File "/data1/yinpeng.dong/LAVIS-main/lavis/common/dist_utils.py", line 14, in <module>
+    import timm.models.hub as timm_hub
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/__init__.py", line 2, in <module>
+    from .models import create_model, list_models, is_model, list_modules, model_entrypoint, \
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/models/__init__.py", line 1, in <module>
+    from .byoanet import *
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/models/byoanet.py", line 15, in <module>
+    from timm.data import IMAGENET_DEFAULT_MEAN, IMAGENET_DEFAULT_STD
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/data/__init__.py", line 7, in <module>
+    from .loader import create_loader
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/data/loader.py", line 12, in <module>
+    from .transforms_factory import create_transform
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/timm/data/transforms_factory.py", line 9, in <module>
+    from torchvision import transforms
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torchvision/__init__.py", line 6, in <module>
+    from torchvision import _meta_registrations, datasets, io, models, ops, transforms, utils
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torchvision/models/__init__.py", line 2, in <module>
+    from .convnext import *
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torchvision/models/convnext.py", line 8, in <module>
+    from ..ops.misc import Conv2dNormActivation, Permute
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torchvision/ops/__init__.py", line 1, in <module>
+    from ._register_onnx_ops import _register_custom_op
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torchvision/ops/_register_onnx_ops.py", line 5, in <module>
+    from torch.onnx import symbolic_opset11 as opset11
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torch/onnx/__init__.py", line 10, in <module>
+    from . import (  # usort:skip. Keep the order instead of sorting lexicographically
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torch/onnx/symbolic_caffe2.py", line 4, in <module>
+    from torch.onnx import symbolic_helper, symbolic_opset9 as opset9
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torch/onnx/symbolic_opset9.py", line 1603, in <module>
+    @_onnx_symbolic(
+  File "/home/yinpeng.dong/anaconda3/envs/shouwei-mvclip/lib/python3.10/site-packages/torch/onnx/_internal/registration.py", line 267, in onnx_symbolic
+    @_beartype.beartype
+KeyboardInterrupt

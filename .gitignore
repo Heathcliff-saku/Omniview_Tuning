@@ -1,0 +1,7 @@
+src/
+rebuttal/
+clip_benchmark/
+BLIP-finetune/
+baseline/
+/scripts/plot_fig
+**/__pycache__/
