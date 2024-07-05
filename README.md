@@ -65,7 +65,7 @@ MVCap is a large-scale dataset tailored for viewpoint invariance researches of V
 },
 ...
 ```
-- **source multi-view image**
+- **source multi-view image**:
 We sampled source multi viewpoint images from three existing 3D datasets：
   - Objavers-80k：Stores in subfolder `/views`
   - IM3D: Stores in subfolder `/im3d`
