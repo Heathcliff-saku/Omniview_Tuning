@@ -54,21 +54,27 @@ def get_opts():
     # parser.add_argument('--eval_data_label_path', type=list, default=[['C:/Users/86181/Desktop/rubbish/GMFooldataset_blender/111111111/ImageNet-V+', 'C:/Users/86181/Desktop/MVCLIP-cvpr2024/MVCLIP_project/mvclip/label_&_captions/labels.txt']])
     # must match with '--eval_data_path' one by one
     # 
+    # parser.add_argument('--test_data_label_path', type=list, 
+    # default=[['/data1/yinpeng.dong/shouwei-dataset/imagenet/val','/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imnet.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/ImageNet-1k','/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/cifar-100-test/test', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/ImageNet-v2','/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-ske/sketch', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-o', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/im_o_gt_label.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-r', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/im_r_gt_label.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ood-cv-full', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/gt_label_oodcv.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/imagenet-v', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels_imagenet_v.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imv.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/imagenet-v+', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imv+.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/ood-cv', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_oodcv.txt'],
+    #         ['/data1/yinpeng.dong/shouwei-dataset/03_multi_view_testset/MIRO', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/03_multi_view_testset/miro_gt_label.txt'],
+    #     ])
+
     parser.add_argument('--test_data_label_path', type=list, 
-    default=[['/data1/yinpeng.dong/shouwei-dataset/imagenet/val','/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imnet.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/ImageNet-1k','/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/cifar-100-test/test', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/ImageNet-v2','/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-ske/sketch', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-o', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/im_o_gt_label.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ImageNet-r', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/im_r_gt_label.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/ood-cv-full', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/shouwei-dataset/04_2d_ood_testset/gt_label_oodcv.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/imagenet-v', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels_imagenet_v.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imv.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/imagenet-v+', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_imv+.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/ood-cv', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/labels.txt', '/data1/yinpeng.dong/Omniview-Tuning/src/label_&_captions/gt_label/gt_label_oodcv.txt'],
-            ['/data1/yinpeng.dong/shouwei-dataset/03_multi_view_testset/MIRO', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label.txt', '/data1/yinpeng.dong/shouwei-dataset/03_multi_view_testset/miro_gt_label.txt'],
+    default=[['dataset_source/ImageNet-1k','dataset_source/labels/gt_label/gt_label.txt', 'dataset_source/labels/gt_label/gt_label.txt'],
+            ['dataset_source/imagenet-v', 'dataset_source/labels/labels_imagenet_v.txt', 'dataset_source/labels/gt_label/gt_label_imv.txt'],
+            ['dataset_source/imagenet-v+', 'dataset_source/labels/labels.txt', 'dataset_source/labels/gt_label/gt_label_imv+.txt'],
         ])
-    
+
     parser.add_argument('--test_data_label_path_2', type=list, 
     default=[ 
             ['/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/cifar-100-test/test', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt', '/data1/yinpeng.dong/shouwei-dataset/00_clean_testset/gt_label_cifar.txt'],

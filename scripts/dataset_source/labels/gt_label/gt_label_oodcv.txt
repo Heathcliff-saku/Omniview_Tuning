@@ -1,0 +1,10 @@
+airliner
+bike
+ocean_liner
+school_bus
+car
+folding_chair
+desk
+scooter
+sofa
+electric_locomotive
