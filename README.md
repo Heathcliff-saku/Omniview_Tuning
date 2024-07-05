@@ -82,6 +82,8 @@ then, in `scripts/config.py`, you should
 - replace the `--training_info_path` to [`path/to/your/metadata.json`, `path/to/your/metadata_imgnet.json`]
 - replace the `--test_data_label_path` to [..., [`path/to/your/testdataset.json`, ..., ...],...]
 
+**Note**: If you get a path-related error during runtime, e.g., file not found error. you may need to change the `path` in metadata.json to absolute path fromat.
+
 ### 1.1 Multi-View Caption Dataset (MVCap-4M)
 MVCap is a large-scale dataset tailored for viewpoint invariance researches of Vison-Language Pretraining (VLP) models, comprising over 4.6 million multi-view image-text pairs across more than 100K objects. It contains the following parts:
 - **metadata.json**：Stores the `path`, `caption`, `obj_id` and `img_id` sequence corresponding to each image sample of MVCap. The structures are looks like:
