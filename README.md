@@ -119,10 +119,10 @@ The `IM-V` / `IM-V+` are both OOD datasets for benchmarking viewpoint robustness
 
 If you find our work useful, please consider citing our paper:
 ```
-@article{Ruan2024Omniview,
+@article{ruan2024omniview,
   title={Omniview-Tuning: Boosting Viewpoint Invariance of Vision-Language Pre-training Models},
-  author={{Shouwei Ruan, Yinpeng Dong, Hanqing Liu, Yao Huang, Hang Su, Xingxing Wei}},
-  journal={European Conference on Computer Vision (ECCV)},
+  author={Ruan, Shouwei and Dong, Yinpeng and Liu, Hanqing and Huang, Yao and Su, Hang and Wei, Xingxing},
+  journal={arXiv preprint arXiv:2404.12139},
   year={2024}
 }
 ```
